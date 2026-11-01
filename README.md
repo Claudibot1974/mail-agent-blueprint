@@ -97,6 +97,7 @@ These are non-negotiable, and the acceptance tests check them. The full list is 
 | [modules/](modules/) | One specification sheet per module |
 | [acceptance/](acceptance/) | Test scenarios and invented sample mails |
 | [docs/STORY.md](docs/STORY.md) | Why this exists and what was learned building it |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to propose improvements |
 
 ## FAQ
 
