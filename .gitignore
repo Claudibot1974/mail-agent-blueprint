@@ -1,0 +1,4 @@
+# Launch material (posts, drafts) stays local — never published
+launch/
+
+.DS_Store

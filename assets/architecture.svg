@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">How Menagerie works</title>
+  <desc id="d">Mail files are ingested into an Unsorted folder; the AI triages each conversation and proposes a project; the human approves; mails are filed into project folders or moved to a reversible trash; search, deadlines, recaps and analyses work on the filed archive.</desc>
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1.5; }
+    .ai { fill: #fff8e6; stroke: #d4a72c; stroke-width: 1.5; }
+    .human { fill: #e8f5ec; stroke: #2da44e; stroke-width: 2; }
+    .trash { fill: #fdeeee; stroke: #cf222e; stroke-width: 1.5; }
+    .mod { fill: #eef4ff; stroke: #54aeff; stroke-width: 1.2; }
+    .h { fill: #1f2328; font-size: 15px; font-weight: 600; }
+    .s { fill: #57606a; font-size: 12px; }
+    .e { font-size: 20px; }
+    .arrow { stroke: #8c959f; stroke-width: 2; fill: none; marker-end: url(#a); }
+    .ok { stroke: #2da44e; }
+    .no { stroke: #cf222e; stroke-dasharray: 5 4; }
+    .lbl { fill: #57606a; font-size: 11px; font-style: italic; }
+    .ah { fill: #8c959f; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #30363d; }
+      .ai { fill: #2b2111; stroke: #bb8009; }
+      .human { fill: #12261a; stroke: #3fb950; }
+      .trash { fill: #2d1517; stroke: #f85149; }
+      .mod { fill: #121d2f; stroke: #388bfd; }
+      .h { fill: #e6edf3; }
+      .s, .lbl { fill: #8d96a0; }
+      .arrow { stroke: #6e7681; }
+      .ah { fill: #6e7681; }
+      .ok { stroke: #3fb950; }
+      .no { stroke: #f85149; }
+    }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="ah" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="440" rx="12"/>
+
+  <!-- row 1: pipeline -->
+  <rect class="box" x="24" y="40" width="150" height="92" rx="10"/>
+  <text class="e" x="42" y="72">✉️</text>
+  <text class="h" x="70" y="72">Mail files</text>
+  <text class="s" x="42" y="96">.eml received + sent,</text>
+  <text class="s" x="42" y="114">meeting transcripts</text>
+
+  <rect class="box" x="214" y="40" width="160" height="92" rx="10"/>
+  <text class="e" x="232" y="72">🦦</text>
+  <text class="h" x="260" y="72">Ingest</text>
+  <text class="s" x="232" y="96">one folder per mail,</text>
+  <text class="s" x="232" y="114">no duplicates</text>
+
+  <rect class="box" x="414" y="40" width="140" height="92" rx="10"/>
+  <text class="e" x="432" y="72">📥</text>
+  <text class="h" x="460" y="72">Unsorted</text>
+  <text class="s" x="432" y="96">waiting for triage,</text>
+  <text class="s" x="432" y="114">grouped by thread</text>
+
+  <rect class="ai" x="594" y="40" width="160" height="92" rx="10"/>
+  <text class="e" x="612" y="72">🦉</text>
+  <text class="h" x="640" y="72">AI triage</text>
+  <text class="s" x="612" y="96">reads each mail in full,</text>
+  <text class="s" x="612" y="114">proposes a project</text>
+
+  <rect class="human" x="794" y="40" width="142" height="92" rx="10"/>
+  <text class="e" x="812" y="72">🧑</text>
+  <text class="h" x="840" y="72">You</text>
+  <text class="s" x="812" y="96">OK · other folder ·</text>
+  <text class="s" x="812" y="114">skip · delete</text>
+
+  <path class="arrow" d="M174 86 H210"/>
+  <path class="arrow" d="M374 86 H410"/>
+  <path class="arrow" d="M554 86 H590"/>
+  <path class="arrow" d="M754 86 H790"/>
+
+  <!-- row 2: outcomes -->
+  <rect class="box" x="414" y="196" width="300" height="84" rx="10"/>
+  <text class="e" x="432" y="228">🗂️</text>
+  <text class="h" x="460" y="228">Projects/&lt;Project&gt;/</text>
+  <text class="s" x="432" y="252">one folder per project · indexes updated</text>
+  <text class="s" x="432" y="268">on every move</text>
+
+  <rect class="trash" x="754" y="196" width="182" height="84" rx="10"/>
+  <text class="e" x="772" y="228">🗑️</text>
+  <text class="h" x="800" y="228">Trash</text>
+  <text class="s" x="772" y="252">tombstone + undo,</text>
+  <text class="s" x="772" y="268">purge only by hand</text>
+
+  <path class="arrow ok" d="M840 132 V160 H580 V192"/>
+  <text class="lbl" x="660" y="154">OK → file</text>
+  <path class="arrow no" d="M890 132 V192"/>
+  <text class="lbl" x="896" y="170">delete</text>
+
+  <!-- row 3: modules -->
+  <rect class="mod" x="24" y="336" width="214" height="76" rx="10"/>
+  <text class="e" x="40" y="366">🦁</text>
+  <text class="h" x="68" y="366">Search</text>
+  <text class="s" x="40" y="390">all words, accents, scripts</text>
+
+  <rect class="mod" x="258" y="336" width="214" height="76" rx="10"/>
+  <text class="e" x="274" y="366">🐜</text>
+  <text class="h" x="302" y="366">Deadlines</text>
+  <text class="s" x="274" y="390">from mail, you confirm</text>
+
+  <rect class="mod" x="492" y="336" width="214" height="76" rx="10"/>
+  <text class="e" x="508" y="366">🐺</text>
+  <text class="h" x="536" y="366">Project recaps</text>
+  <text class="s" x="508" y="390">what happened, per period</text>
+
+  <rect class="mod" x="726" y="336" width="210" height="76" rx="10"/>
+  <text class="e" x="742" y="366">🦝</text>
+  <text class="h" x="770" y="366">Analyses</text>
+  <text class="s" x="742" y="390">deep dives you can resume</text>
+
+  <path class="arrow" d="M564 280 V300 H131 V332"/>
+  <path class="arrow" d="M564 300 H365 V332"/>
+  <path class="arrow" d="M564 280 V332"/>
+  <path class="arrow" d="M564 300 H831 V332"/>
+
+  <text class="lbl" x="24" y="24">Everything runs locally. The AI proposes; only you move things.</text>
+</svg>

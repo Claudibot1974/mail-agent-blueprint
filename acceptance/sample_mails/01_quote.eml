@@ -1,0 +1,35 @@
+From: Dana Reyes <dana.reyes@acme-pumps.example.com>
+To: Sam Taylor <sam.taylor@example.com>
+Subject: Quote for pump replacement
+Date: Mon, 02 Mar 2026 09:14:00 +0100
+Message-ID: <quote-001@acme-pumps.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============2719228631759765718=="
+
+--===============2719228631759765718==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Sam,
+
+as discussed, please find attached our quote AC-2291 for the four replacement=
+ pumps
+for the north plant, including seal kits and installation. Payment terms: net=
+ 30.
+The offer is valid until 31 March 2026.
+
+Best regards,
+Dana Reyes
+Acme Pumps =E2=80=94 Sales
+
+--===============2719228631759765718==
+Content-Type: text/csv
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="quote_AC-2291.csv"
+MIME-Version: 1.0
+
+aXRlbSxtb2RlbCxxdHksdW5pdF9wcmljZV9ldXIKMSxBUC00MDAgY2VudHJpZnVnYWwgcHVtcCw0
+LDE4NTAKMixTZWFsIGtpdCBTSy00MCw0LDEyMAozLEluc3RhbGxhdGlvbiAocGVyIHB1bXApLDQs
+MzAwCg==
+
+--===============2719228631759765718==--
